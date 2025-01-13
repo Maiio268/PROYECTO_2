@@ -1,9 +1,11 @@
-/* Declaramos variables */
-:root{
+/* --------------------------------------------------------------- */
+/* COSAS GENERALES DE LA PÁGINA */
+:root{ /* Declaramos variables de colores para el tema claro */
     /* Tema claro */
-    --background-color: #c5d1eb;
-    --text-color: #395b50;
-    --accent-color: #92afd7;
+    --color-principal: #395b50;
+    --color-secundario: #80949e;
+    --color-terciario: #92afd7;
+    --color-cuarto: #c5d1eb;
 }
 *{ /* Se aplica a la pagina entera */
     box-sizing: border-box; /* width y height incluyen el contenido, los bordes y los márgenes internos.
@@ -21,12 +23,12 @@ main {
 a{
     text-decoration: none; /* Quitamos el estilo predeterminado de todos los links de la página */
     color: unset; /* Dejamos el color indefinido para definirlo después como queramos */
-    transition: all ease 0.5s;
+    transition: all ease 0.5s; /* Transición cuando se deja de posicionar el cursor encima del enlace */
 }
 a:hover{
     color: darkblue;
-    transition: all ease 0.5s;
-    opacity: 1.4;
+    transition: all ease 0.5s; /* Transición cuando se posiciona el cursor encima del enlace */
+    opacity: 1.4; /* Aumentamos la opacidad */
 }
 
 /* --------------------------------------------------------------- */
@@ -48,6 +50,35 @@ header .logo img{
 .menu a{
     margin: 3rem; /* Añadir espacio entre enlaces del header */
 }
+/* ------------------------------------------------------------------ */
+
+/* FOOTER GENERICO */
+footer{
+    width: 100%;
+    background-color: #395b50;
+    color: #c5d1eb;
+    display: flex;
+    flex-direction: column; /* Para que al centrar el contenido se centren los elementos del footer en medio de la pantalla */
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    margin: 2.5rem; /* Le damos espacio a los enlaces y textos del footer alrededor de la página */
+}
+footer a{
+    margin: 3rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* MAIN GENÉRICO */
+main{
+    width: 100%;
+    background-color: #92afd7;
+    color: #395b50;
+}
+
+/* ------------------------------------------------------------------ */
+/* BARRA DE BÚSQUEDA (FORMULARIO) */
 .barra_busqueda{
     display: flex;
 }
@@ -68,17 +99,26 @@ header .logo img{
     border-radius: 0 4px 4px 0;
 }
 /* ------------------------------------------------------------------ */
+/* CÓDIGO ESPECÍFICO DE CADA PÁGINA */
 
-/* FOOTER GENERICO */
-footer{
-    width: 100%;
-    background-color: #395b50;
-    color: #c5d1eb;
+.inicio_lambo{
+    width: 45rem;
+    height: 31rem;
+}
+.bienvenido\!{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.parrafo_inicio_section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-}
-footer ul{
-    margin: 3rem;
+    justify-content: space-between;
+
 }

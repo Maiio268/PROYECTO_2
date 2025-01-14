@@ -43,12 +43,21 @@ header{
     padding: 1rem 2rem;
     align-items: center;
 }
-header .logo img{
+header .logo{
     width: 3.5rem;
     height: 3.5rem;
 }
+.icono_perfil{
+    width: 2rem;
+    height: 2rem;
+}
 .menu a{
-    margin: 3rem; /* Añadir espacio entre enlaces del header */
+    margin: 1.5rem; /* Añadir espacio entre enlaces del header */
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /* ------------------------------------------------------------------ */
 
@@ -100,17 +109,17 @@ main{
 }
 /* ------------------------------------------------------------------ */
 /* CÓDIGO ESPECÍFICO DE CADA PÁGINA */
-
 .inicio_lambo{
-    width: 45rem;
-    height: 31rem;
+    width: 47rem;
+    height: auto; /* Para que el height se ajuste proporcionalmente al width */
+    margin-bottom: 4rem;
+    margin-left: 2rem;
 }
 .bienvenido\!{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -120,5 +129,19 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem; /* Añadir espacio entre los elementos del section */
 
 }
+.parrafo_inicio_article{
+    align-items: center;
+    text-align: justify; /* Justificar el parrafo para que se ve mejor */
+    margin-right: 2rem;
+}
+.parrafo_inicio_article h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.parrafo_inicio_article p{
+    font-size: 1.3rem;
+}
+

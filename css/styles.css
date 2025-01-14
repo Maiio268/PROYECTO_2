@@ -109,6 +109,8 @@ main{
 }
 /* ------------------------------------------------------------------ */
 /* CÓDIGO ESPECÍFICO DE CADA PÁGINA */
+
+/* INICIO */
 .inicio_lambo{
     width: 47rem;
     height: auto; /* Para que el height se ajuste proporcionalmente al width */
@@ -143,5 +145,28 @@ main{
 }
 .parrafo_inicio_article p{
     font-size: 1.3rem;
+}
+/* ------------------------------------------------------------------ */
+/* CONTACTO */
+.red_logo{
+    width: 15rem;
+    height: auto;
+}
+.redes_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.nuestras_redes{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 

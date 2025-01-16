@@ -7,48 +7,79 @@
     <link rel="icon" href="/assets/imagenes/LOGO_PROYECTO_2.png" type="image/png"> <!-- Link para cambiar la imagen de la pestaña del buscador -->
 </head>
 <body>
-<header class="header">
-    <a href="inicio.html"><img class="logo" src="/assets/imagenes/LOGO_PROYECTO_2.png" alt="Logo de Motor Mania"></a>
-    <form class="barra_busqueda">
-        <input class="barra_busqueda_input" type="text" placeholder="Buscar...">
-        <button class="barra_busqueda_button" type="submit">🔍</button>
-    </form>
-    <nav>
-        <!-- Enlaces -->
-        <ul class="menu">
-            <a href="inicio.html">Marcas</a>
-            <a href="productos.html">Productos</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="otros_servicios.html">Otros servicios</a>
-            <a href="#"><img class="icono_perfil" src="/assets/imagenes/icono_perfil.png" alt="Imagen del perfil"></a>
-            <!-- "#" se usa para que el enlace quede vacío y no haga nada -->
+    <header class="header">
+        <a href="inicio.html"><img class="logo" src="/assets/imagenes/LOGO_PROYECTO_2.png" alt="Logo de Motor Mania"></a>
+        <form class="barra_busqueda">
+            <input class="barra_busqueda_input" type="text" placeholder="Buscar...">
+            <button class="barra_busqueda_button" type="submit">🔍</button>
+        </form>
+        <nav>
+            <!-- Enlaces -->
+            <ul class="menu">
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="otros_servicios.html">Otros servicios</a>
+                <a href="#"><img class="icono_perfil" src="/assets/imagenes/icono_perfil.png" alt="Imagen del perfil"></a>
+                <!-- "#" se usa para que el enlace quede vacío y no haga nada -->
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="titulo_nuestras_redes">Nuestras redes sociales:</h1>
+        <section class="redes_section">
+            <article class="redes_article">
+                <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/facebook_logo.png" alt="Imagen de Facebook"></a>
+                <h3>MotorManiaOficial</h3>
+            </article>
+            <article class="redes_article">
+                <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/Instagram_logo.svg" alt="Imagen de Instagram"></a>
+                <h3>MotorManiaOficial</h3>
+            </article>
+            <article class="redes_article">
+                <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/twitter_logo.webp" alt="Imagen de Twitter"></a>
+                <h3>MotorManiaHub</h3>
+            </article>
+        </section>
+        <h2 class="titulo_rellena_formulario">¡Rellena el formulario para recibir ofertas y descuentos!</h2>
+        <form class="formulario" action="/enviar" method="post">
+
+            <!--Nombre completo-->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required><br><br>
+
+            <!--Correo electrónico-->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Escribe tu correo electrónico" required><br><br>
+
+            <!--Número de teléfono-->
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Escribe tu número de teléfono" required><br><br>
+
+            <!--Género-->
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="">Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <!--Botón de enviar-->
+            <button class="form_boton_enviar" type="submit">Enviar</button>
+
+            <!--"type" para obligar a introducir el tipo de carácter en el campo deseado-->
+            <!--"placeholder" muestra un texto en el interior del campo para decirle al usuario lo que debe introducir-->
+            <!--"required" obliga al usuario a completar el campo, sino no puede enviarse el formulario-->
+            <!--"id" identifica el campo con un nombre para la etiqueta <label>-->
+        </form>
+    </main>
+    <footer class="footer">
+        <ul class="footer_enlaces">
+            <a href="inicio.html">Copyright © 2024 Motor Mania</a>
+            <a href="inicio.html">Sobre nosotros</a>
+            <a href="inicio.html">Cookies</a>
+            <a href="inicio.html">Terminos de servicio</a>
         </ul>
-    </nav>
-</header>
-<main class="main">
-    <h1 class="nuestras_redes">Nuestras redes sociales:</h1>
-    <section class="redes_section">
-        <article>
-            <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/facebook_logo.png" alt="Imagen de Facebook"></a>
-            <h3>Motor_Mania</h3>
-        </article>
-        <article>
-            <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/Instagram_logo.svg" alt="Imagen de Instagram"></a>
-            <h3>Motor_Mania</h3>
-        </article>
-        <article>
-            <a href="contacto.html"><img class="red_logo" src="/assets/imagenes/twitter_logo.webp" alt="Imagen de Twitter"></a>
-            <h3>Motor_Mania</h3>
-        </article>
-    </section>
-</main>
-<footer class="footer">
-    <ul class="footer_enlaces">
-        <a href="inicio.html">Copyright © 2024 Motor Mania</a>
-        <a href="inicio.html">Sobre nosotros</a>
-        <a href="inicio.html">Cookies</a>
-        <a href="inicio.html">Terminos de servicio</a>
-    </ul>
-</footer>
+    </footer>
 </body>
 </html>

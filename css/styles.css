@@ -19,6 +19,7 @@ html, body {
 }
 main {
     flex-grow: 1; /* Permite que el main ocupe el espacio disponible */
+    padding-bottom: 3rem; /* Para solucionar el espacio entre el formulario y el footer */
 }
 a{
     text-decoration: none; /* Quitamos el estilo predeterminado de todos los links de la página */
@@ -26,7 +27,7 @@ a{
     transition: all ease 0.5s; /* Transición cuando se deja de posicionar el cursor encima del enlace */
 }
 a:hover{
-    color: darkblue;
+    color: white;
     transition: all ease 0.5s; /* Transición cuando se posiciona el cursor encima del enlace */
     opacity: 1.4; /* Aumentamos la opacidad */
 }
@@ -151,6 +152,15 @@ main{
 .red_logo{
     width: 15rem;
     height: auto;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    opacity: 0.8;
+}
+.red_logo:hover{
+    cursor: pointer;
+    transition: 0.5s all ease;
+    opacity: 1.5;
 }
 .redes_section{
     display: flex;
@@ -161,7 +171,7 @@ main{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.nuestras_redes{
+.titulo_nuestras_redes{
     font-size: 3rem;
     display: flex;
     flex-direction: column;
@@ -169,4 +179,58 @@ main{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.redes_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes_article h3{
+    padding: 1rem;
+    background-color: #395b50;
+    color: #c5d1eb;
+    border: solid 1px black;
+    border-radius: 1rem;
+}
+.titulo_rellena_formulario{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.formulario{
+    width: 100%;
+    max-width: 25rem;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.formulario label{
+    font-weight: bold; /* Pone la letra de los "label" en negrita */
+}
+.formulario input, .formulario select{
+    width: 100%; /* El ancho va a ser el 100% del padre */
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.form_boton_enviar{
+    background-color: #007BFF;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+.form_boton_enviar:hover{
+    background-color: #0056b3;
+}
+
+
 

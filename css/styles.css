@@ -2,10 +2,9 @@
 /* COSAS GENERALES DE LA PÁGINA */
 :root{ /* Declaramos variables de colores para el tema claro */
     /* Tema claro */
-    --color-principal: #395b50;
-    --color-secundario: #80949e;
-    --color-terciario: #92afd7;
-    --color-cuarto: #c5d1eb;
+    --color-principal: #395b50; /* Color del fondo del header y footer y titulos, letras... */
+    --color-secundario: #92afd7; /* Color del fondo del main */
+    --color-terciario: #c5d1eb; /* Color de los enlaces del header y footer */
 }
 *{ /* Se aplica a la pagina entera */
     box-sizing: border-box; /* width y height incluyen el contenido, los bordes y los márgenes internos.
@@ -51,6 +50,10 @@ header .logo{
 .icono_perfil{
     width: 2rem;
     height: 2rem;
+}
+.icono_perfil:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 .menu a{
     margin: 1.5rem; /* Añadir espacio entre enlaces del header */
@@ -109,16 +112,17 @@ main{
     border-radius: 0 4px 4px 0;
 }
 /* ------------------------------------------------------------------ */
-/* CÓDIGO ESPECÍFICO DE CADA PÁGINA */
+/* CÓDIGOS ESPECÍFICOS DE CADA PÁGINA */
 
 /* INICIO */
-.inicio_lambo{
+.imagen_inicio_lambo{
     width: 47rem;
     height: auto; /* Para que el height se ajuste proporcionalmente al width */
     margin-bottom: 4rem;
     margin-left: 2rem;
 }
-.bienvenido\!{
+.titulo_inicio_bienvenido{
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +145,7 @@ main{
     margin-right: 2rem;
 }
 .parrafo_inicio_article h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
 }
 .parrafo_inicio_article p{
@@ -186,8 +190,8 @@ main{
 }
 .redes_article h3{
     padding: 1rem;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: #f9f9f9;
+    color: #395b50;
     border: solid 1px black;
     border-radius: 1rem;
 }
@@ -277,29 +281,71 @@ main{
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
-    padding-bottom: 2rem;
 }
 .marca_imagen{
     width: 15rem;
     height: 15rem;
     border: 2px solid black;
 }
-.marca_lamborguini{ /* Diferenciamos la imagen de lamborguini de las demás porque el borde es de un color diferente */
+.marca_imagen:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.marca_imagen_lamborguini{ /* Diferenciamos la imagen de lamborguini de las demás porque el borde es de un color diferente */
     width: 15rem;
     height: 15rem;
     border: 2px solid darkgoldenrod;
 }
-.marca_imagen:hover{
-    cursor: pointer;
+.marca_imagen_lamborguini:hover{
+    opacity: 0.8;
 }
+
 .titulo_nuestra_marca_nº1{
     font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
-    padding-bottom: 2rem;
 }
-.marcas_section h3{
+.marca_titulo{
     font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #395b50;
+    color: #c5d1eb;
+    border: solid 1px black;
+    border-radius: 1rem;
+}
+.marcas_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+.marcas_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.marca_lamborguini_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.marca_lamborguini_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.marca_lamborguini_section p{
+    font-size: 1.3rem;
+    width: 30rem;
+    text-align: justify;
 }

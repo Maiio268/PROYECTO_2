@@ -437,10 +437,12 @@ main{
 .imagen_producto{
     width: 25rem;
     height: auto;
+    border: 3px solid black;
 }
-.imagen_producto_ferrari{
+.imagen_producto_ferrari{ /* Diferencio la imagen del ferrari de las demás porque las proporciones son diferentes */
     width: 25rem;
     height: 14.1rem;
+    border: 3px solid black;
 }
 .productos_section{
     display: flex;
@@ -448,6 +450,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding-top: 4rem;
 }
 .productos_article{
     display: flex;
@@ -456,3 +459,41 @@ main{
     justify-content: center;
     gap: 1rem;
 }
+.titulo_productos_disponibles{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+.titulo_producto{
+    font-size: 1.3rem;
+}
+.boton_producto{
+    padding: 1rem;
+    background-color: #395b50;
+    color: #c5d1eb;
+    border: solid 1px black;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 19rem;
+}
+.boton_producto:hover{
+    cursor: pointer;
+    background-color: #c5d1eb;
+    color: #395b50;
+}
+.div_producto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.div_producto p{
+    font-size: 1.2rem;
+}
+/* ------------------------------------------------------------------ */
+/* DUDAS PREGUNTAR */
+/* ------------------------------------------------------------------ */
+/* en la pagina productos quierom anidar articles, pongo article o div? */

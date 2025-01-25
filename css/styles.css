@@ -67,7 +67,7 @@ header .logo{
     margin: 1.5rem; /* Añadir espacio entre enlaces del header */
 }
 .menu{
-    list-style-type: none; /* Elimina las viñetas */
+    list-style-type: none; /* Elimina el punto del <li> */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,6 +85,7 @@ footer{
     align-items: center;
 }
 footer ul{
+    list-style-type: none; /* Elimina el punto del <li> */
     margin: 2.5rem; /* Le damos espacio a los enlaces y textos del footer alrededor de la página */
 }
 footer a{
@@ -141,6 +142,12 @@ main{
     justify-content: space-between;
     gap: 2rem; /* Añadir espacio entre los elementos del section */
     margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 .parrafo_inicio_article{
     align-items: center;
@@ -154,7 +161,6 @@ main{
 .parrafo_inicio_article p{
     font-size: 1.3rem;
 }
-
 .titulo_confiar_en_nosotros{
     font-size: 3rem;
     display: flex;
@@ -429,6 +435,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 .marca_titulo{
     font-size: 1.5rem;
@@ -465,7 +472,13 @@ main{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding-top: 2rem;
+    max-width: 60rem; /* Para que el color del fondo no ocupe todo el ancho, ponemos un max-width */
+    margin: auto; /* Centra el section horizontalmente */
+    padding: 2rem;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 .marca_lamborguini_section p{
     font-size: 1.3rem;
@@ -544,7 +557,7 @@ main{
 }
 /* Animación */
 /* Contenedor de la animacion, donde van a superponerse las imágenes */
-.animacion_productos_article{
+.animacion_productos_div{
     position: relative; /* Al contenedor de la animacion le ponemos position:relative */
     width: 45rem;
     height: 25rem;
@@ -588,21 +601,68 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    border: solid 1px black;
+    border-radius: 1rem;
 }
-.oferta_article{
+.oferta_article_1{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    margin-left: 2rem;
     margin-right: 2rem;
+}
+.oferta_article_1 p{
+    font-size: 1.2rem;
+    text-align: justify;
 }
 .imagen_oferta{
     width: 25rem;
     height: auto;
 }
-
+.oferta_article_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.oferta_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.oferta_div del{
+    color: gray;
+    font-style: italic;
+}
+.oferta_div_precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.oferta_div_precio p{
+    font-size: 1.2rem;
+}
+.boton_producto_inverso{
+    padding: 1rem;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    border: solid 1px black;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.boton_producto_inverso:hover {
+    cursor: pointer;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
 
 
 

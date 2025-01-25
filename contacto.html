@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
@@ -7,21 +7,25 @@
     <link rel="icon" href="/assets/imagenes/LOGO_PROYECTO_2.png" type="image/png"> <!-- Link para cambiar la imagen de la pestaña del buscador -->
 </head>
 <body>
+    <!-- target="_self" añadidos en todos los enlaces para que se abran en la misma pestaña del navegador -->
     <header class="header">
         <a href="inicio.html" target="_self"><img class="logo" src="/assets/imagenes/LOGO_PROYECTO_2.png" alt="Logo de Motor Mania"></a>
         <form class="barra_busqueda">
-            <input class="barra_busqueda_input" type="text" placeholder="Buscar...">
+            <label for="buscar" class="barra_busqueda_label"></label>
+            <input id="buscar" class="barra_busqueda_input" type="text" placeholder="Buscar...">
             <button class="barra_busqueda_button" type="submit">🔍</button>
         </form>
         <nav>
             <!-- Enlaces -->
             <ul class="menu">
-                <a href="inicio.html" target="_self">Inicio</a>
-                <a href="productos.html" target="_self">Productos</a>
-                <a href="contacto.html" target="_self">Contacto</a>
-                <a href="marcas.html" target="_self">Marcas</a>
-                <a href="#" target="_self"><img class="icono_perfil" src="/assets/imagenes/icono_perfil.png" alt="Imagen del perfil"></a>
-                <!-- "#" se usa para que el enlace quede vacío y no haga nada -->
+                <li>
+                    <a href="inicio.html" target="_self">Inicio</a>
+                    <a href="productos.html" target="_self">Productos</a>
+                    <a href="contacto.html" target="_self">Contacto</a>
+                    <a href="marcas.html" target="_self">Marcas</a>
+                    <a href="#" target="_self"><img class="icono_perfil" src="/assets/imagenes/Sujeto.png" alt="Imagen del perfil"></a>
+                    <!-- "#" se usa para que el enlace quede vacío y no haga nada -->
+                </li>
             </ul>
         </nav>
     </header>
@@ -100,10 +104,12 @@
     </main>
     <footer class="footer">
         <ul class="footer_enlaces">
-            <a href="inicio.html" target="_self">Copyright © 2024 Motor Mania</a>
-            <a href="inicio.html" target="_self">Sobre nosotros</a>
-            <a href="inicio.html" target="_self">Cookies</a>
-            <a href="inicio.html" target="_self">Terminos de servicio</a>
+            <li>
+                <a href="inicio.html" target="_self">Copyright © 2024 Motor Mania</a>
+                <a href="inicio.html" target="_self">Sobre nosotros</a>
+                <a href="inicio.html" target="_self">Cookies</a>
+                <a href="inicio.html" target="_self">Terminos de servicio</a>
+            </li>
         </ul>
     </footer>
 </body>

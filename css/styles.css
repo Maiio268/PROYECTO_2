@@ -67,6 +67,7 @@ header .logo{
     margin: 1.5rem; /* Añadir espacio entre enlaces del header */
 }
 .menu{
+    list-style-type: none; /* Elimina las viñetas */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,26 +235,27 @@ main{
     font-size: 1.1rem;
     text-align: justify;
 }
-/* Contenedor del carrusel */
+/* Animación */
+/* Contenedor de la animacion, donde van a superponerse las imágenes */
 .animacion_inicio_article{
     position: relative; /* Al contenedor de la animacion le ponemos position:relative */
     width: 200rem;
     height: 20rem;
     overflow: hidden; /* Elimina las partes de las imágenes que sobresalgan del borde, es decir, del límite del contenedor */
     border-radius: 1rem;
-    box-shadow: 0 4px 10px;
+    box-shadow: 0 4px 10px; /* 1er valor indica desplazamiento horizontal (en este caso la sombra está centrada en el medio del eje horizontal del contenedor), 2o valor indica el desplazamiento vertical (en este caso la sombra va a sobresalir 4px debajo del elemento), 3er valor indica el difuminado de la sombra (contra más alto el valor, más difusa la sombra) */
 }
 
-/* Estilo de las imágenes del carrusel */
+/* Imágenes de la animacion */
 .animacion_inicio_imagen{
     position: absolute; /* Ponemos position:absolute patra que las imágenes se posicionen en la esquina superior izquierda del contenedor de la animación */
     width: 100%; /* width y height al 100% para que ocupen al 100% el contenedor */
     height: 100%;
     object-fit: cover; /* La imagen ocupa el contenedor sin perder sus proporciones */
     opacity: 0;
-    animation: cambiar_imagen 9s infinite; /* La animación va a durar 12s y va a repetirse infinitamente */
+    animation: cambiar_imagen 9s infinite; /* La animación va a durar 9s y va a repetirse infinitamente */
 }
-/* Decimos en cuanto tiempo va a aparecer la imagen en la animación, como la animación dura 12s, he puesto cada imagen 4s */
+/* Decimos en cuanto tiempo va a aparecer la imagen en la animación, como la animación dura 9s, he puesto cada imagen 3s */
 .animacion_inicio_imagen:nth-child(1){
     animation-delay: 0s;
 }
@@ -531,10 +533,85 @@ main{
 .div_producto p{
     font-size: 1.2rem;
 }
+
+.titulo_solo_por_hoy{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/* Animación */
+/* Contenedor de la animacion, donde van a superponerse las imágenes */
+.animacion_productos_article{
+    position: relative; /* Al contenedor de la animacion le ponemos position:relative */
+    width: 45rem;
+    height: 25rem;
+    overflow: hidden; /* Elimina las partes de las imágenes que sobresalgan del borde, es decir, del límite del contenedor */
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px; /* 1er valor indica desplazamiento horizontal (en este caso la sombra está centrada en el medio del eje horizontal del contenedor), 2o valor indica el desplazamiento vertical (en este caso la sombra va a sobresalir 4px debajo del elemento), 3er valor indica el difuminado de la sombra (contra más alto el valor, más difusa la sombra) */
+}
+/* Imágenes de la animación */
+.animacion_productos_imagen{
+    position: absolute; /* Ponemos position:absolute para que las imágenes se posicionen en la esquina superior izquierda del contenedor de la animación */
+    width: 100%; /* width y height al 100% para que ocupen al 100% el contenedor */
+    height: 100%;
+    object-fit: cover; /* La imagen ocupa el contenedor sin perder sus proporciones */
+    opacity: 0;
+    animation: cambiar_imagen 12s infinite; /* La animación va a durar 12s y va a repetirse infinitamente */
+}
+/* Decimos en cuanto tiempo va a aparecer la imagen en la animación, como la animación dura 12s, he puesto cada imagen 3s */
+.animacion_productos_imagen:nth-child(1){
+    animation-delay: 0s;
+}
+.animacion_productos_imagen:nth-child(2){
+    animation-delay: 3s;
+}
+.animacion_productos_imagen:nth-child(3){
+    animation-delay: 6s;
+}
+.animacion_productos_imagen:nth-child(4){
+    animation-delay: 9s;
+}
+/* Especificamos los frames de la animación */
+@keyframes cambiar_imagen{
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.oferta_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.oferta_article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.imagen_oferta{
+    width: 25rem;
+    height: auto;
+}
+
+
+
+
+
+
 /* ------------------------------------------------------------------ */
 /* DUDAS PREGUNTAR */
-/* ------------------------------------------------------------------ */
-/* en la pagina productos quierom anidar articles, pongo article o div? */
+/* en la pagina productos quiero anidar articles, pongo article o div? */
+/* en el WC3 VALIDATOR me da warning cuando uso sections/articles sin titulos, me propone usar div, que hago? */
 
 
 

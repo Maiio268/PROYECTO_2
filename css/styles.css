@@ -6,6 +6,14 @@
     --color-secundario: #92afd7; /* Color del fondo del main */
     --color-terciario: #c5d1eb; /* Color de los enlaces del header y footer */
 }
+/*
+:root{
+     Dark Mode
+    --color-principal: #1f2f28;
+    --color-secundario: #314054;
+    --color-terciario: #4a5969;
+*/
+
 *{ /* Se aplica a la pagina entera */
     box-sizing: border-box; /* width y height incluyen el contenido, los bordes y los márgenes internos.
                             Los bordes y el relleno se restan del tamaño total que especifiques, no se suman. */
@@ -35,8 +43,8 @@ a:hover{
 /* HEADER GENÉRICO */
 header{
     width: 100%;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,8 +76,8 @@ header .logo{
 /* FOOTER GENERICO */
 footer{
     width: 100%;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
     display: flex;
     flex-direction: column; /* Para que al centrar el contenido se centren los elementos del footer en medio de la pantalla */
     justify-content: space-between;
@@ -86,8 +94,8 @@ footer a{
 /* MAIN GENÉRICO */
 main{
     width: 100%;
-    background-color: #92afd7;
-    color: #395b50;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
 }
 
 /* ------------------------------------------------------------------ */
@@ -107,7 +115,7 @@ main{
     padding: 8px;
     border: 1px solid black;
     border-left: none;
-    background-color: #c5d1eb;
+    background-color: var(--color-terciario);
     cursor: pointer;
     border-radius: 0 4px 4px 0;
 }
@@ -115,13 +123,6 @@ main{
 /* CÓDIGOS ESPECÍFICOS DE CADA PÁGINA */
 
 /* INICIO */
-.imagen_inicio_lambo{
-    width: 47rem;
-    height: auto; /* Para que el height se ajuste proporcionalmente al width */
-    margin-bottom: 4rem;
-    margin-left: 2rem;
-    border: 3px solid #395b50;
-}
 .titulo_inicio_bienvenido{
     font-size: 3rem;
     display: flex;
@@ -138,11 +139,11 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 2rem; /* Añadir espacio entre los elementos del section */
-
+    margin-left: 2rem;
 }
 .parrafo_inicio_article{
     align-items: center;
-    text-align: justify; /* Justificar el parrafo para que se ve mejor */
+    text-align: justify; /* Justificar el parrafo para que se vea mejor */
     margin-right: 2rem;
 }
 .parrafo_inicio_article h2{
@@ -175,15 +176,15 @@ main{
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
     border: 1px solid black;
     border-radius: 1rem;
 }
 .confiar_en_nosotros_article:hover{
     cursor: pointer;
-    background-color: #c5d1eb;
-    color: #395b50;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
 }
 .confiar_en_nosotros_article h3{
     margin-bottom: 0.5rem;
@@ -209,7 +210,8 @@ main{
     height: auto;
     margin-left: 2rem;
     margin-right: 2rem;
-    border: 3px solid #395b50;
+    border: 3px solid var(--color-principal);
+    border-radius: 1rem
 }
 .imagen_noticia:hover{
     transition: 0.5s all ease;
@@ -232,7 +234,43 @@ main{
     font-size: 1.1rem;
     text-align: justify;
 }
+/* Contenedor del carrusel */
+.animacion_inicio_article{
+    position: relative; /* Al contenedor de la animacion le ponemos position:relative */
+    width: 200rem;
+    height: 20rem;
+    overflow: hidden; /* Elimina las partes de las imágenes que sobresalgan del borde, es decir, del límite del contenedor */
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px;
+}
 
+/* Estilo de las imágenes del carrusel */
+.animacion_inicio_imagen{
+    position: absolute; /* Ponemos position:absolute patra que las imágenes se posicionen en la esquina superior izquierda del contenedor de la animación */
+    width: 100%; /* width y height al 100% para que ocupen al 100% el contenedor */
+    height: 100%;
+    object-fit: cover; /* La imagen ocupa el contenedor sin perder sus proporciones */
+    opacity: 0;
+    animation: cambiar_imagen 9s infinite; /* La animación va a durar 12s y va a repetirse infinitamente */
+}
+/* Decimos en cuanto tiempo va a aparecer la imagen en la animación, como la animación dura 12s, he puesto cada imagen 4s */
+.animacion_inicio_imagen:nth-child(1){
+    animation-delay: 0s;
+}
+.animacion_inicio_imagen:nth-child(2){
+    animation-delay: 3s;
+}
+.animacion_inicio_imagen:nth-child(3){
+    animation-delay: 6s;
+}
+/* Especificamos los frames de la animación */
+@keyframes cambiar_imagen{
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    100% {opacity: 0;}
+}
 
 /* ------------------------------------------------------------------ */
 /* CONTACTO */
@@ -274,7 +312,7 @@ main{
 .redes_article h3{
     padding: 1rem;
     background-color: #f9f9f9;
-    color: #395b50;
+    color: var(--color-principal);
     border: solid 1px black;
     border-radius: 1rem;
 }
@@ -343,7 +381,7 @@ main{
     justify-content: center;
     padding: 3rem;
     background-color: #f9f9f9;
-    color: #395b50;
+    color: var(--color-principal);
     border: solid 1px black;
     border-radius: 1rem;
     cursor: pointer;
@@ -353,7 +391,7 @@ main{
 }
 .preguntas_article:hover{
     transition: all ease 0.5s;
-    background-color: #395b50;
+    background-color: var(--color-principal);
     color: #f9f9f9;
 }
 /* ------------------------------------------------------------------ */
@@ -393,8 +431,8 @@ main{
 .marca_titulo{
     font-size: 1.5rem;
     padding: 1rem;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
     border: solid 1px black;
     border-radius: 1rem;
 }
@@ -471,8 +509,8 @@ main{
 }
 .boton_producto{
     padding: 1rem;
-    background-color: #395b50;
-    color: #c5d1eb;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
     border: solid 1px black;
     border-radius: 1rem;
     cursor: pointer;
@@ -480,8 +518,8 @@ main{
 }
 .boton_producto:hover{
     cursor: pointer;
-    background-color: #c5d1eb;
-    color: #395b50;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
 }
 .div_producto{
     display: flex;
@@ -497,3 +535,7 @@ main{
 /* DUDAS PREGUNTAR */
 /* ------------------------------------------------------------------ */
 /* en la pagina productos quierom anidar articles, pongo article o div? */
+
+
+
+

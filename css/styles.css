@@ -9,9 +9,9 @@
 /*
 :root{
      Dark Mode
-    --color-principal: #1f2f28;
-    --color-secundario: #314054;
-    --color-terciario: #4a5969;
+    --color-principal: #0d0d0d;
+    --color-secundario: #505050;
+    --color-terciario: #4d4d4d;
 */
 
 *{ /* Se aplica a la pagina entera */
@@ -38,7 +38,9 @@ a:hover{
     transition: all ease 0.5s; /* Transición cuando se posiciona el cursor encima del enlace */
     opacity: 1.4; /* Aumentamos la opacidad */
 }
-
+img{
+    cursor: pointer;
+}
 /* --------------------------------------------------------------- */
 /* HEADER GENÉRICO */
 header{
@@ -187,11 +189,13 @@ main{
     color: var(--color-terciario);
     border: 1px solid black;
     border-radius: 1rem;
+    transition: 0.5s ease;
 }
 .confiar_en_nosotros_article:hover{
     cursor: pointer;
     background-color: var(--color-terciario);
     color: var(--color-principal);
+    transform: translateY(-10px); /* Mueve 10px verticalmente hacia arriba el article */
 }
 .confiar_en_nosotros_article h3{
     margin-bottom: 0.5rem;
@@ -479,12 +483,59 @@ main{
     color: var(--color-terciario);
     border: 1px solid black;
     border-radius: 1rem;
+    box-shadow: 0 4px 20px;
 }
 .marca_lamborguini_section p{
     font-size: 1.3rem;
     width: 30rem;
     text-align: justify;
 }
+
+.section_presentacion_lamborghini{
+    padding: 3rem 1rem;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    text-align: center;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 55%;
+    box-shadow: 0 4px 20px;
+}
+.titulo_presentacion_lamborghini{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.div_presentacion_lamborghini{
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.article_presentacion_lamborghini{
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+.article_presentacion_lamborghini:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.article_presentacion_lamborghini img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.article_presentacion_lamborghini h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.article_presentacion_lamborghini p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* ------------------------------------------------------------------ */
 /* PRODUCTOS */
 .imagen_producto{

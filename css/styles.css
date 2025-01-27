@@ -3,7 +3,7 @@
 :root{ /* Declaramos variables de colores para el tema claro */
     /* Tema claro */
     --color-principal: #395b50; /* Color del fondo del header y footer y titulos, letras... */
-    --color-secundario: #92afd7; /* Color del fondo del main */
+    --color-secundario: #D6E5F4; /* Color del fondo del main */
     --color-terciario: #c5d1eb; /* Color de los enlaces del header y footer */
 }
 /*

@@ -29,6 +29,7 @@
         </nav>
     </header>
     <main class="main">
+
         <h1 class="titulo_productos_disponibles">Últimos modelos disponibles</h1>
         <section class="productos_section">
             <article class="productos_article">
@@ -82,6 +83,48 @@
                 <a class="boton_producto" href="#" target="_self">Comprar</a>
             </article>
         </section>
+
+        <h2 class="titulo_rellena_formulario">¡Rellena el formulario para recibir ofertas y descuentos!</h2>
+        <form class="formulario" action="/enviar" method="post">
+
+            <!--Nombre completo-->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required><br><br>
+
+            <!--Correo electrónico-->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Escribe tu correo electrónico" required><br><br>
+
+            <!--Número de teléfono-->
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Escribe tu número de teléfono" required><br><br>
+
+            <!--Dirección-->
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" placeholder="Escribe tu dirección" required><br><br>
+
+            <!--Código postal-->
+            <label for="codigo_postal">Código postal:</label>
+            <input type="text" id="codigo_postal" placeholder="Escribe tu código postal" required><br><br>
+
+            <!--Género-->
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="">Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <!--Botón de enviar-->
+            <button class="form_boton_enviar" type="submit">Enviar</button>
+
+            <!--"type" para obligar a introducir el tipo de carácter en el campo deseado-->
+            <!--"placeholder" muestra un texto en el interior del campo para decirle al usuario lo que debe introducir-->
+            <!--"required" obliga al usuario a completar el campo, sino no puede enviarse el formulario-->
+            <!--"id" identifica el campo con un nombre para la etiqueta <label>-->
+        </form>
+
         <h1 class="titulo_solo_por_hoy">¡Sólo por hoy!</h1>
         <section class="oferta_section">
             <article class="oferta_article_1">
@@ -105,6 +148,7 @@
                 </div>
             </article>
         </section>
+
     </main>
     <footer class="footer">
         <nav>

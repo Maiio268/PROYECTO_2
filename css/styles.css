@@ -86,7 +86,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-footer ul{
+.footer_enlaces{
     list-style-type: none; /* Elimina el punto del <li> */
     margin: 2.5rem; /* Le damos espacio a los enlaces y textos del footer alrededor de la página */
 }
@@ -441,7 +441,7 @@ main{
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-.marca_titulo{
+.marca_titulito{
     font-size: 1.5rem;
     padding: 1rem;
     background-color: var(--color-principal);
@@ -570,7 +570,7 @@ main{
     align-items: center;
     padding-top: 3rem;
 }
-.titulo_producto{
+.titulito_producto{
     font-size: 1.3rem;
 }
 .boton_producto{
@@ -714,16 +714,113 @@ main{
     background-color: var(--color-secundario);
     color: var(--color-terciario);
 }
-
-
-
-
-
 /* ------------------------------------------------------------------ */
-/* DUDAS PREGUNTAR */
-/* en la pagina productos quiero anidar articles, pongo article o div? */
-/* en el WC3 VALIDATOR me da warning cuando uso sections/articles sin titulos, me propone usar div, que hago? */
+/* MEDIA QUERY */
+@media (max-width: 1030px){
+    /* Header */
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Footer */
+    .footer_enlaces li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Section de las noticias */
+    .noticias_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .menu li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 700px){
+    /* Ajustamos tamaños de los titulos de todas las paginas */
+    .titulo_inicio_bienvenido{
+        font-size: 1.8rem;
+    }
+    .titulo_confiar_en_nosotros{
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .titulo_noticias{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_presentacion_lamborghini{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_confiar_en_nosotros{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_productos_disponibles{
+        font-size: 1.6rem;
+        align-items: center;
+    }
+    .titulo_solo_por_hoy{
+        font-size: 3rem;
+        align-items: center;
+    }
+    .titulo_nuestras_redes{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_rellena_formulario{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_preguntas_frecuentes{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .titulo_nuestra_marca_nº1{
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .titulo_nuestras_marcas{
+        font-size: 1.8rem;
+        align-items: center;
+    }
+    /* ¡Bienvenido a MotorMania! */
 
+
+    /* ¿Por qué confiar en MotorMania? */
+    .confiar_en_nosotros_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .confiar_en_nosotros_article{
+        max-width: 60%;
+    }
+    /* Noticias */
+    .noticias_article{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen_noticia{
+        width: 25rem;
+        height: auto;
+    }
+    .noticias_article{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1050px){
+
+}
 
 
 

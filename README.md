@@ -34,3 +34,14 @@ Página de Marcas:
 
 ![img_7.png](assets/Imagenes_W3CValidador/img_7.png)
 ![img_8.png](assets/Imagenes_W3CValidador/img_8.png)
+
+SELECCIONAR: por id, por clase y por query selector
+COSAS QUE HACER EN LA WEB CON JAVASCRIPT:
+-Seleccionar de todas las distintas formas
+-Añadir una pregunta frecuente
+-Eliminar un producto
+-Modificar el 'contenido html' del párrafo introductorio de la página de inicio (boton)
+-Modificar el 'atributo' ...... de algun div cuyo nombre no sea aclaratorio
+-Modificar el tamaño y color de los botones de 'comprar'
+
+

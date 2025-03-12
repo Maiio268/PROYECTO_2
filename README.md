@@ -1,12 +1,12 @@
-### Instrucciones para visualizar el proyecto ###
+## Instrucciones para visualizar el proyecto ##
 1) Clickar en el enlace al repositorio
 2) Dentro del repositorio encontrarás los archivos .html y .css
 3) Para visualizar la página web hay 2 opciones: 
 1)Usar GitHub Pages: si el repositorio tiene habilitado GitHub Pages, puedes acceder a la página web directamente desde la URL proporcionada por GitHub, encontrarás la URL en la sección de "Settings" > "Pages" de mi repositorio.
 2)Descargar los archivos y visualizarlos desde tu ordenador.
-### Descripción del proyecto ###
+## Descripción del proyecto ##
 Mi página web está formada por cuatro páginas, la página de inicio (donde hay una breve introducción y resumen de lo que puedes encontrar en la página), una página de productos (donde se venden coches), una página de contacto (donde podemos encontrar un pequeño formulario y enlace a las redes sociales) y, por último, una página de marcas, donde aparece información sobre la marca principal de la página y otras marcas colaboradoras.
-### W3C VALIDATOR ###
+## W3C VALIDATOR ##
 Todo el código de mi página web ha pasado correctamente las validaciones del W3C Validator
 
 A continuación adjunto capturas de la validación del código del archivo css:
@@ -44,4 +44,14 @@ COSAS QUE HACER EN LA WEB CON JAVASCRIPT:
 -Modificar el 'atributo' ...... de algun div cuyo nombre no sea aclaratorio
 -Modificar el tamaño y color de los botones de 'comprar'
 
+## Clasificación de los lenguajes de script de cliente ##
+### ¿Qué es un lenguaje de script del cliente?
+Un lenguaje de scripting de cliente es un lenguaje que se ejecuta en el navegador del usuario para mejorar la interactividad, el diseño y la funcionalidad de una página web sin necesidad de recargarla desde el servidor. Estas son sus características:
+- Ejecución en el cliente: El código se ejecuta en el navegador del usuario, reduciendo la carga en el servidor.
+- Interactividad: Permite respuestas dinámicas a las acciones del usuario.
+- Integración con HTML y CSS: JavaScript trabaja junto con estos lenguajes para crear experiencias web ricas.
+- Sintaxis flexible: Soporta múltiples paradigmas como programación orientada a objetos y funcional.
+- Estándares: ECMAScript (ES) establece las reglas y funcionalidades que definen el lenguaje JavaScript.
 
+### Clasificación de los lenguajes de script del cliente:
+1. JavaScript (JS) 

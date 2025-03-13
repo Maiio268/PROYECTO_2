@@ -44,9 +44,9 @@ COSAS QUE HACER EN LA WEB CON JAVASCRIPT:
 -Modificar el 'atributo' ...... de algun div cuyo nombre no sea aclaratorio
 -Modificar el tamaño y color de los botones de 'comprar'
 
-## Clasificación de los lenguajes de script de cliente ##
+## Lenguajes de script del cliente 
 ### ¿Qué es un lenguaje de script del cliente?
-Un lenguaje de scripting de cliente es un lenguaje que se ejecuta en el navegador del usuario para mejorar la interactividad, el diseño y la funcionalidad de una página web sin necesidad de recargarla desde el servidor. Estas son sus características:
+Un lenguaje de script del cliente es un lenguaje que se ejecuta en el navegador del usuario para mejorar la interactividad, el diseño y la funcionalidad de una página web sin necesidad de recargarla desde el servidor. Estas son sus características:
 - Ejecución en el cliente: El código se ejecuta en el navegador del usuario, reduciendo la carga en el servidor.
 - Interactividad: Permite respuestas dinámicas a las acciones del usuario.
 - Integración con HTML y CSS: JavaScript trabaja junto con estos lenguajes para crear experiencias web ricas.
@@ -54,4 +54,13 @@ Un lenguaje de scripting de cliente es un lenguaje que se ejecuta en el navegado
 - Estándares: ECMAScript (ES) establece las reglas y funcionalidades que definen el lenguaje JavaScript.
 
 ### Clasificación de los lenguajes de script del cliente:
-1. JavaScript (JS) 
+1. JavaScript (JS): Lenguaje estándar de la web,  escompatible con todos los navegadores, dinámico y no tipado. Uso principal: Desarrollo web interactivo.
+2. TypeScript: Superset de JavaScript con tipado estático, tiene una mejor estructura y escalabilidad. Uso principal: Aplicaciones grandes y mantenibles.
+3. Dart: Compilado a JavaScript o ejecutado en su propio entorno, orientado a rendimiento. Uso principal: Aplicaciones móviles y web.
+4. CoffeeScript: Sintaxis más concisa y limpia que JavaScript, se compila a JS. Uso principal: Código más legible y mantenible.
+5. Elm: Lenguaje funcional, seguro y sin errores en tiempo de ejecución. Uso principal: Aplicaciones frontend con arquitectura funcional.
+6. Haxe: Compilado a JavaScript y otros lenguajes, flexible y optimizado. Uso principal: Juegos y aplicaciones interactivas.
+
+### Evolución de JavaScript y su relación con ECMAScript (ES6+)
+JavaScript ha evolucionado constantemente desde su creación en 1995 por Brendan Eich, el desarrollo de este lenguaje de script del cliente está regulado por el estándar ECMAScript (ES).
+En 1997 Se publica ECMAScript 1 (ES1) como primer estándar de JavaScript, 2 años después llega ECMAScript 3 (ES3) con mejoras en manejo de excepciones y expresiones regulares, hasta 2009 no llega ECMAScript 5 (ES5), que trae JSON.parse(), use strict, y mejoras en arrays. Es en 2015 cuando finalmente aparece ECMAScript 6 (ES6), una de las mayores actualizaciones del lenguaje, desde entonces, ECMAScript se actualiza cada año con versiones nuevas.

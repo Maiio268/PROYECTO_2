@@ -1,4 +1,5 @@
 /* Añadir una pregunta frecuente */
+/*
 let preguntasSection = document.querySelector(".preguntas_section")
 let preguntasNuevoArticle = document.createElement("article");
 preguntasNuevoArticle.className = "preguntas_article";
@@ -13,7 +14,7 @@ preguntasNuevoArticle.appendChild(h4Article);
 preguntasNuevoArticle.appendChild(pArticle);
 
 preguntasSection.appendChild(preguntasNuevoArticle);
-
+*/
 
 
 

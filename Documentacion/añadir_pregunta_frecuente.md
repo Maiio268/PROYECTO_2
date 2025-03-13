@@ -1,10 +1,10 @@
 Enlace hacia el archivo .js: [añadir_pregunta_frecuente.js](../js/a%C3%B1adir_pregunta_frecuente.js)
 
-### ¿Por qué he hecho eso?
+## ¿Por qué he hecho eso?
 He decidido añadir una pregunta frecuente más ya que, en mi opinión, habían pocas preguntas frecuentes y veía conveniente que hubiese una más.
 
-### Explicación
-- Selecciono el section con querySelector, (no con getElement ya que este selector nos da una colección HTML, no un solo elemento, que es lo que quiero) que es un selector de las preguntas frecuentes para después añadirle el article hijo.
+## Explicación
+- Selecciono el section con de las preguntas frecuentes querySelector (no con getElement ya que este selector nos da una colección HTML, no un solo elemento, que es lo que quiero), para después añadirle el article hijo.
 
     
     let preguntasSection = document.querySelector(".preguntas_section")

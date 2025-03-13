@@ -1,1 +1,0 @@
-/* Modificar el 'atributo' ...... de algun div cuyo nombre no sea aclaratorio */

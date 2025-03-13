@@ -15,8 +15,6 @@ He decidido eliminar varios productos de la tienda de productos porque no me con
 
     let articleProductos = sectionProductos.getElementsByClassName("productos_article")[1];
 
-
-
 - Elimino el article seleccionado anteriormente con .remove
     
 

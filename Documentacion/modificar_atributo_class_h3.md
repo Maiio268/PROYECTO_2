@@ -1,4 +1,4 @@
-Enlace hacia el archivo .js: [modificar_atributo_class_h3.js](../js/modificar_atributo_class_h3.js)
+Enlace hacia el archivo .js: [modificar_atributo_class_h3.js](../js/Fase_1/modificar_atributo_class_h3.js)
 
 ## ¿Por qué he hecho eso?
 He decidido cambiar el nombre de las clases de los h3 que indican el nombre de las marcas de mi página web ya que el nombre del class no me parece tan intuitivo ni aclaratorio.

@@ -1,4 +1,4 @@
-Enlace hacia el archivo .js: [eliminar_producto.js](../js/eliminar_producto.js)
+Enlace hacia el archivo .js: [eliminar_producto.js](../js/Fase_1/eliminar_producto.js)
 
 ## ¿Por qué he hecho eso?
 He decidido eliminar varios productos de la tienda de productos porque no me convencía esa estructura, me gusta más que haya 1 solo section y que aparezca una sola línea de 3 productos.

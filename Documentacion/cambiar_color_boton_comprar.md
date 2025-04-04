@@ -1,4 +1,4 @@
-Enlace hacia el archivo .js: [cambiar_color_boton_comprar.js](../js/cambiar_color_boton_comprar.js)
+Enlace hacia el archivo .js: [cambiar_color_boton_comprar.js](../js/Fase_1/cambiar_color_boton_comprar.js)
 
 ## ¿Por qué he hecho eso?
 He decidido cambiar el color de los botones de la página de comprar para darle una estética diferente a la página de productos, quiero que los botones resalten más.

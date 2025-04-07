@@ -28,7 +28,6 @@ document.body.prepend(contenedor_botones)
 
 function filtrarProductosPorMarca (array_marcas) {
     const productos = document.querySelectorAll('.productos_article'); //Creamos la variable productos y cogemos todos los artículos de los productos de la tienda
-
-}
+    }
 
 

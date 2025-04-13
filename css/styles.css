@@ -283,7 +283,13 @@ main{
     40% {opacity: 0;}
     100% {opacity: 0;}
 }
-
+.titulo_galeria_interactiva{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
 /* ------------------------------------------------------------------ */
 /* CONTACTO */
 .titulo_sobre_nosotros{

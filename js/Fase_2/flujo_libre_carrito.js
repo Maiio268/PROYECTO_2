@@ -33,24 +33,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Suponemos que en la página carrito.html existe un contenedor con la clase "cart__items"
-    const cartContainer = document.querySelector('.cart__items');
-    if (cartContainer) {
+    // Creamos una constanteSuponemos y seleccionamos el 'div' que es el contenedor donde van a estar los productos que seleccionemo
+    const contenedorCarrito = document.querySelector('.contenedorCarrito');
+    if (contenedorCarrito) {
         // Configuramos el estilo del contenedor para que tenga fondo blanco, esté centrado y tenga espacio interno
-        cartContainer.style.backgroundColor = "white";
-        cartContainer.style.margin = "0rem auto 1.5rem auto";
-        cartContainer.style.padding = "20px";
-        cartContainer.style.maxWidth = "800px";
-        cartContainer.style.borderRadius = "1rem";
-        cartContainer.style.border = "1px solid black";
+        contenedorCarrito.style.backgroundColor = "white";
+        contenedorCarrito.style.margin = "0rem auto 1.5rem auto";
+        contenedorCarrito.style.padding = "20px";
+        contenedorCarrito.style.maxWidth = "800px";
+        contenedorCarrito.style.borderRadius = "1rem";
+        contenedorCarrito.style.border = "1px solid black";
 
         // Leemos los productos almacenados en sessionStorage
         const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
-        cartContainer.innerHTML = ""; // Limpiamos cualquier contenido previo del contenedor
+        contenedorCarrito.innerHTML = ""; // Limpiamos cualquier contenido que pudiese estar en el contenedor
 
         // Si el carrito está vacío, mostramos un mensaje al usuario
         if (cart.length === 0) {
-            cartContainer.innerHTML = "<p>No hay productos en el carrito</p>";
+            contenedorCarrito.innerHTML = "<p>No hay productos en el carrito</p>";
         } else {
             // Si hay productos en el carrito, iteramos sobre cada uno para crear su marcado HTML
             cart.forEach(product => {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
                 // Agregamos el artículo al contenedor del carrito
-                cartContainer.appendChild(article);
+                contenedorCarrito.appendChild(article);
             });
         }
     }
